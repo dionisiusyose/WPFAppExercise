@@ -8,14 +8,18 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="SupplierMenu">
     <Border Background="#FFF">
-        <Grid>
+        <Grid Margin="-1,0,1,-0.4">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
 
             <StackPanel Margin="0 40 0 40" Grid.Column="0">
-                <!-- Supplier Id Input -->
+                <TabControl>
+                    <TabItem Header="Supplier"/>
+                    <TabItem Header="Item"/>
+                </TabControl>
+                    <!-- Supplier Id Input -->
                 <Grid Margin="0 0 0 50">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="*"/>
@@ -49,16 +53,16 @@
                 </Grid>
             </StackPanel>
 
-            <DataGrid Grid.Column="1" Padding="30" >
+            <DataGrid Grid.Column="1" Padding="30" x:Name="SupplierTable" SelectionChanged="SupplierTable_SelectionChanged" IsReadOnly="True" AutoGenerateColumns="False">
                 <DataGrid.Columns>
-                    <DataGridTextColumn Header="Id" Width="*">
+                    <DataGridTextColumn Header="Id" Width="*" Binding="{Binding Id}">
                         <DataGridTextColumn.HeaderStyle>
                             <Style TargetType="DataGridColumnHeader">
                                 <Setter Property="HorizontalContentAlignment" Value="Center"/>
                             </Style>
                         </DataGridTextColumn.HeaderStyle>
                     </DataGridTextColumn>
-                    <DataGridTextColumn Header="Name" Width="3*">
+                    <DataGridTextColumn Header="Name" Width="3*" Binding="{Binding Name}">
                         <DataGridTextColumn.HeaderStyle>
                             <Style TargetType="DataGridColumnHeader">
                                 <Setter Property="HorizontalContentAlignment" Value="Center"/>

@@ -20,4 +20,4 @@ D:\Github\WPFAppExercise\WpfExercise\WpfExercise\bin\Debug\EntityFramework.SqlSe
 D:\Github\WPFAppExercise\WpfExercise\WpfExercise\bin\Debug\EntityFramework.xml
 D:\Github\WPFAppExercise\WpfExercise\WpfExercise\bin\Debug\EntityFramework.SqlServer.xml
 D:\Github\WPFAppExercise\WpfExercise\WpfExercise\obj\Debug\WpfExercise.csproj.CopyComplete
-D:\Github\WPFAppExercise\WpfExercise\WpfExercise\obj\Debug\WpfExercise.Migrations.addmodelsupplier.resources
+D:\Github\WPFAppExercise\WpfExercise\WpfExercise\obj\Debug\WpfExercise.Migrations.addSupplierTable.resources

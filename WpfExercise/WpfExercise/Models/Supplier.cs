@@ -8,13 +8,12 @@ using System.Threading.Tasks;
 
 namespace WpfExercise.Models
 {
-    [Table("Tb_M_Supplier")]
+    [Table("TB_M_Supplier")]
     public class Supplier
     {
         [Key]
-        public string Id { get; set; }
+        public int Id { get; set; }
         public string Name { get; set; }
-
         public Supplier() { }
         public Supplier(string name)
         {

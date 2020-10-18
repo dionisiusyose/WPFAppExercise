@@ -3,15 +3,15 @@
     using System;
     using System.Data.Entity.Migrations;
     
-    public partial class addmodelsupplier : DbMigration
+    public partial class addSupplierTable : DbMigration
     {
         public override void Up()
         {
             CreateTable(
-                "dbo.Tb_M_Supplier",
+                "dbo.TB_M_Supplier",
                 c => new
                     {
-                        Id = c.String(nullable: false, maxLength: 128),
+                        Id = c.Int(nullable: false, identity: true),
                         Name = c.String(),
                     })
                 .PrimaryKey(t => t.Id);
@@ -20,7 +20,7 @@
         
         public override void Down()
         {
-            DropTable("dbo.Tb_M_Supplier");
+            DropTable("dbo.TB_M_Supplier");
         }
     }
 }

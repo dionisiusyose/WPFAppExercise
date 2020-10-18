@@ -66,9 +66,9 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Context\MyContext.cs" />
-    <Compile Include="Migrations\202010171222013_addmodelsupplier.cs" />
-    <Compile Include="Migrations\202010171222013_addmodelsupplier.designer.cs">
-      <DependentUpon>202010171222013_addmodelsupplier.cs</DependentUpon>
+    <Compile Include="Migrations\202010180219075_addSupplierTable.cs" />
+    <Compile Include="Migrations\202010180219075_addSupplierTable.designer.cs">
+      <DependentUpon>202010180219075_addSupplierTable.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Supplier.cs" />
@@ -106,8 +106,8 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-    <EmbeddedResource Include="Migrations\202010171222013_addmodelsupplier.resx">
-      <DependentUpon>202010171222013_addmodelsupplier.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\202010180219075_addSupplierTable.resx">
+      <DependentUpon>202010180219075_addSupplierTable.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

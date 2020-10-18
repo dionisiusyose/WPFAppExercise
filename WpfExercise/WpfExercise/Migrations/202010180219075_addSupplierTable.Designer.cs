@@ -7,13 +7,13 @@ namespace WpfExercise.Migrations
     using System.Resources;
     
     [GeneratedCode("EntityFramework.Migrations", "6.4.4")]
-    public sealed partial class addmodelsupplier : IMigrationMetadata
+    public sealed partial class addSupplierTable : IMigrationMetadata
     {
-        private readonly ResourceManager Resources = new ResourceManager(typeof(addmodelsupplier));
+        private readonly ResourceManager Resources = new ResourceManager(typeof(addSupplierTable));
         
         string IMigrationMetadata.Id
         {
-            get { return "202010171222013_addmodelsupplier"; }
+            get { return "202010180219075_addSupplierTable"; }
         }
         
         string IMigrationMetadata.Source
